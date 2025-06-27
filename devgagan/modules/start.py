@@ -189,7 +189,7 @@ async def terms(client, message):
     await message.reply_text(terms_text, reply_markup=buttons)
  
  
- @app.on_message(filters.command("plan") & filters.private)
+@app.on_message(filters.command("plan") & filters.private)
 async def plan(client, message):
     plan_text = (
         "💎 **Upgrade to Premium Plans** 💎\n\n"
